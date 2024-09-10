@@ -1,8 +1,6 @@
 import { useRef, useState } from "react";
 import * as XLSX from "xlsx";
-import "jspdf-autotable";
 import "./App.css";
-import { MdDone } from "react-icons/md";
 import { IoPrintSharp } from "react-icons/io5";
 import { useReactToPrint } from "react-to-print";
 import Content from "./components/Content";
