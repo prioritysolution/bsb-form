@@ -89,7 +89,7 @@ const Content = ({ info }) => {
                     ? "left-8"
                     : info.GENDER === "F"
                     ? "left-[60px]"
-                    : "left-24"
+                    : "hidden"
                 }`}
               >
                 <MdDone className="text-2xl font-bold" />
@@ -225,9 +225,7 @@ const Content = ({ info }) => {
             </thead>
             <tbody>
               <tr className="text-center">
-                <td className="border border-gray-400 text-xs p-2">
-                  {info.Crop}
-                </td>
+                <td className="border border-gray-400 text-xs p-2">ধান</td>
                 <td className="border border-gray-400 text-xs p-2">
                   {info.Block}
                 </td>
