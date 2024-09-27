@@ -21,8 +21,6 @@ const App = () => {
         const sheet = workbook.Sheets[sheetName];
         const parsedData = XLSX.utils.sheet_to_json(sheet);
 
-        console.log(parsedData);
-
         setData(parsedData);
       };
     }
