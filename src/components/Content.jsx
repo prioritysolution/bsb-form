@@ -3,7 +3,7 @@ import { MdDone } from "react-icons/md";
 
 const Content = ({ info }) => {
   return (
-    <div className="w-[210mm] h-[297mm] bg-white p-4 shadow-[10px_10px_40px_-15px_rgba(0,0,0,0.3)] flex flex-col justify-between gap-1 relative">
+    <div className="w-[210mm] h-[297mm] bg-white p-4 shadow-[10px_10px_40px_-15px_rgba(0,0,0,0.3)] flex flex-col justify-between gap-[2px] relative">
       <div className="absolute w-full h-full opacity-10 top-0 left-0 flex items-center justify-center">
         <img
           src={require("../images/image2.jpeg")}
@@ -66,7 +66,7 @@ const Content = ({ info }) => {
         </div>
 
         <div className="w-full px-2">
-          <p className="text-wrap text-sm mt-2">
+          <p className="text-wrap text-sm mt-1">
             <span className="relative">
               কৃষকের নাম
               ..........................................................
@@ -157,7 +157,7 @@ const Content = ({ info }) => {
           </p>
         </div>
 
-        <div className="w-full p-2">
+        <div className="w-full px-2">
           <h2 className="text-sm font-medium mb-1">
             কৃষকের ব্যাঙ্কের বিবরণ (আধার সংযুক্তিকৃত ব্যাঙ্ক অ্যাকাউন্ট):
           </h2>
@@ -178,19 +178,19 @@ const Content = ({ info }) => {
                   অধিসূচিত এলাকা
                 </th>
                 <th
-                  className="border border-gray-400 text-xs font-medium p-1"
+                  className="border border-gray-400 text-xs font-medium p-1 w-[80px]"
                   rowSpan={2}
                 >
                   মৌজার নাম ও জে এল নং
                 </th>
                 <th
-                  className="border border-gray-400 text-xs font-medium p-1"
+                  className="border border-gray-400 text-xs font-medium p-1 w-[120px]"
                   rowSpan={2}
                 >
                   খতিয়ান নং
                 </th>
                 <th
-                  className="border border-gray-400 text-xs font-medium p-1"
+                  className="border border-gray-400 text-xs font-medium p-1 w-[150px]"
                   rowSpan={2}
                 >
                   দাগ নং
@@ -225,30 +225,26 @@ const Content = ({ info }) => {
             </thead>
             <tbody>
               <tr className="text-center">
-                <td className="border border-gray-400 text-xs p-2">ধান</td>
-                <td className="border border-gray-400 text-xs p-2">
-                  {info.Block}
-                </td>
-                <td className="border border-gray-400 text-xs p-2">
-                  {info.GP}
-                </td>
-                <td className="border border-gray-400 text-xs p-2">
+                <td className="border border-gray-400 text-xs h-12">ধান</td>
+                <td className="border border-gray-400 text-xs">{info.Block}</td>
+                <td className="border border-gray-400 text-xs">{info.GP}</td>
+                <td className="border border-gray-400 text-xs">
                   {info.Mouza} - {info.JL_No}
                 </td>
-                <td className="border border-gray-400 text-xs p-2">
+                <td className="border border-gray-400 text-xs">
                   {info.Khatian_No}
                 </td>
-                <td className="border border-gray-400 text-xs p-2">
+                <td className="border border-gray-400 text-xs text-wrap">
                   {info.Plot_Number}
                 </td>
-                <td className="border border-gray-400 text-xs p-2">
+                <td className="border border-gray-400 text-xs">
                   {info.Area_Insured_in_Acre &&
                     Number(info.Area_Insured_in_Acre).toFixed(2)}
                 </td>
-                <td className="border border-gray-400 text-xs p-2">
+                <td className="border border-gray-400 text-xs">
                   {info.NATURE_OF_FARMER}
                 </td>
-                <td className="border border-gray-400 text-xs p-2"></td>
+                <td className="border border-gray-400 text-xs"></td>
               </tr>
             </tbody>
           </table>
@@ -307,7 +303,7 @@ const Content = ({ info }) => {
           </table>
         </div>
 
-        <div className="w-full flex flex-col gap-1 p-2">
+        <div className="w-full flex flex-col gap-1 px-2">
           <div>
             <h4 className="font-medium">
               কৃষকদের দাখিল যোগ্য নথি (বাধ্যতামূলক) :
